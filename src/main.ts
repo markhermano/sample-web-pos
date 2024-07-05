@@ -1,9 +1,12 @@
 import { createApp } from 'vue'
+import ElementPlus from 'element-plus'
 import App from './App.vue'
-import PrimeVue from 'primevue/config'
+import router from '@/router'
 import './assets/stylesheets/main.css'
-import 'primevue/resources/themes/aura-light-green/theme.css'
+import 'element-plus/dist/index.css'
+import 'virtual:uno.css'
 
 const app = createApp(App)
-app.use(PrimeVue)
+app.use(ElementPlus)
+  .use(router)
   .mount('#app')
